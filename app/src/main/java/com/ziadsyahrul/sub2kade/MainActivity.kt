@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ziadsyahrul.sub2kade.MVP.detail.DetailLeagueActivity
 import com.ziadsyahrul.sub2kade.adapter.LeagueAdapter
@@ -21,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         initData()
 
 
-        rv_league_main.layoutManager = LinearLayoutManager(this)
+        rv_league_main.layoutManager = GridLayoutManager(this, 2)
         rv_league_main.adapter = LeagueAdapter(this, leagueItemList){
             Toast.makeText(this, it.idLeague, Toast.LENGTH_SHORT).show()
             val intent = Intent(this, DetailLeagueActivity::class.java)

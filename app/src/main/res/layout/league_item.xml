@@ -26,8 +26,9 @@
         android:layout_height="wrap_content"
         android:text="La Liga"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="@id/img_league_badge"
-        app:layout_constraintStart_toEndOf="@id/img_league_badge"
-        app:layout_constraintTop_toTopOf="@id/img_league_badge" />
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_league_badge" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
