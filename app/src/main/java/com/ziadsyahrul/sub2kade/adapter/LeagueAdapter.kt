@@ -34,7 +34,7 @@ class LeagueAdapter(val context: Context, val league: List<LeagueItem>, val list
 
             itemView.setOnClickListener {
                 listener(items)
-                // mengirimkna data idLeague ke Detail activity
+                // mengirimkan data idLeague ke Detail activity
                 Hawk.put(DetailLeagueActivity.ID_LEAGUE, items.idLeague)
             }
 

@@ -32,6 +32,7 @@ class DetailLeagueActivity : AppCompatActivity(),
         vp_match.adapter = pagerAdapter
         tab_detail.setupWithViewPager(vp_match)
 
+
     }
 
     override fun showDetailLeague(data: List<LeaguesItem>) {

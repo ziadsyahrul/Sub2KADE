@@ -14,4 +14,8 @@ object TheSportDBAPI {
     fun getPrevMatch(idLeague: String?) : String{
         return BuildConfig.BASE_URL + "eventspastleague.php?id=" + idLeague
     }
+
+    fun getDetailEvent(idLeague: String?) : String{
+        return BuildConfig.BASE_URL + "lookupevent.php?id=" + idLeague
+    }
 }

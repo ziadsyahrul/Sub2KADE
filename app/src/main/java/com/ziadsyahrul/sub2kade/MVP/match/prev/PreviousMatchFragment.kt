@@ -1,6 +1,7 @@
 package com.ziadsyahrul.sub2kade.MVP.match.prev
 
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -36,6 +37,7 @@ class PreviousMatchFragment : Fragment(), PreviousView {
         val idLeague = Hawk.get(DetailLeagueActivity.ID_LEAGUE, "")
         presenter.getPreviousEvent(idLeague)
         rv_prev_match.layoutManager = LinearLayoutManager(context)
+
     }
 
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sub2KADE</string>
+    <string name="app_name"></string>
 
     <string-array name="data_league_badge">
         <item>@drawable/bundesliga</item>

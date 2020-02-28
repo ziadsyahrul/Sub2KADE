@@ -40,7 +40,5 @@ class PreviousAdapter(val items: List<EventsItem?>?) :
             tv_str_away_score.text = items?.intAwayScore
             tv_date.text = items?.dateEvent
         }
-
     }
-
 }
