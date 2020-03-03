@@ -1,4 +1,4 @@
-package com.ziadsyahrul.sub2kade.MVP.detail
+package com.ziadsyahrul.sub2kade.MVP.detail.detailLeague
 
 import com.ziadsyahrul.sub2kade.model.LeaguesItem
 

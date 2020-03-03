@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.orhanobut.hawk.Hawk
-import com.ziadsyahrul.sub2kade.MVP.detail.DetailLeagueActivity
+import com.ziadsyahrul.sub2kade.MVP.detail.detailLeague.DetailLeagueActivity
 import com.ziadsyahrul.sub2kade.R
 import com.ziadsyahrul.sub2kade.model.LeagueItem
 import kotlinx.android.extensions.LayoutContainer
@@ -42,3 +42,4 @@ class LeagueAdapter(val context: Context, val league: List<LeagueItem>, val list
 
     }
 }
+

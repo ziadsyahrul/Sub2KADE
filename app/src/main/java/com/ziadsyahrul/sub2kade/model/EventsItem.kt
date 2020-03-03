@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 data class EventsItem(
 
 	@field:SerializedName("intHomeShots")
-	val intHomeShots: Any? = null,
+	val intHomeShots: String? = null,
 
 	@field:SerializedName("strSport")
 	val strSport: String? = null,
@@ -16,14 +16,6 @@ data class EventsItem(
 	@field:SerializedName("strAwayLineupSubstitutes")
 	val strAwayLineupSubstitutes: String? = null,
 
-	@field:SerializedName("strTweet1")
-	val strTweet1: Any? = null,
-
-	@field:SerializedName("strTweet2")
-	val strTweet2: Any? = null,
-
-	@field:SerializedName("strTweet3")
-	val strTweet3: Any? = null,
 
 	@field:SerializedName("idLeague")
 	val idLeague: String? = null,
@@ -59,7 +51,7 @@ data class EventsItem(
 	val strHomeYellowCards: String? = null,
 
 	@field:SerializedName("idHomeTeam")
-	val idHomeTeam: String? = null,
+	val homeTeamId: String? = null,
 
 	@field:SerializedName("intHomeScore")
 	val intHomeScore: String? = null,
@@ -80,7 +72,7 @@ data class EventsItem(
 	val strDate: String? = null,
 
 	@field:SerializedName("strHomeFormation")
-	val strHomeFormation: Any? = null,
+	val strHomeFormation: String? = null,
 
 	@field:SerializedName("strMap")
 	val strMap: Any? = null,
@@ -110,7 +102,7 @@ data class EventsItem(
 	val strCircuit: Any? = null,
 
 	@field:SerializedName("intAwayShots")
-	val intAwayShots: Any? = null,
+	val intAwayShots: String? = null,
 
 	@field:SerializedName("strFilename")
 	val strFilename: String? = null,
@@ -125,7 +117,7 @@ data class EventsItem(
 	val strAwayLineupForward: String? = null,
 
 	@field:SerializedName("strTimeLocal")
-	val strTimeLocal: String? = null,
+	val strTimeLocal: Any? = null,
 
 	@field:SerializedName("idAPIfootball")
 	val idAPIfootball: Any? = null,
@@ -137,7 +129,7 @@ data class EventsItem(
 	val strSeason: String? = null,
 
 	@field:SerializedName("intSpectators")
-	val intSpectators: Any? = null,
+	val intSpectators: String? = null,
 
 	@field:SerializedName("strEventAlternate")
 	val strEventAlternate: String? = null,
@@ -152,7 +144,7 @@ data class EventsItem(
 	val strHomeLineupSubstitutes: String? = null,
 
 	@field:SerializedName("strAwayFormation")
-	val strAwayFormation: Any? = null,
+	val strAwayFormation: String? = null,
 
 	@field:SerializedName("strEvent")
 	val strEvent: String? = null,

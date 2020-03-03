@@ -5,8 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.ziadsyahrul.sub2kade.MVP.detail.DetailLeagueActivity
+import com.ziadsyahrul.sub2kade.MVP.detail.detailLeague.DetailLeagueActivity
 import com.ziadsyahrul.sub2kade.adapter.LeagueAdapter
 import com.ziadsyahrul.sub2kade.model.LeagueItem
 import kotlinx.android.synthetic.main.activity_main.*
@@ -20,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         initData()
-
 
         rv_league_main.layoutManager = GridLayoutManager(this, 2)
         rv_league_main.adapter = LeagueAdapter(this, leagueItemList){

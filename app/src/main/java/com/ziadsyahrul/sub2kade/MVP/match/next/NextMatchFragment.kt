@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.orhanobut.hawk.Hawk
-import com.ziadsyahrul.sub2kade.MVP.detail.DetailLeagueActivity
+import com.ziadsyahrul.sub2kade.MVP.detail.detailLeague.DetailLeagueActivity
 
 import com.ziadsyahrul.sub2kade.R
 import com.ziadsyahrul.sub2kade.adapter.NextAdapter
@@ -41,6 +41,7 @@ class NextMatchFragment : Fragment(),  NextView{
     override fun getNextEvent(data: List<EventsItem?>?) {
         nextAdapter = NextAdapter(data)
         rv_next_match.adapter = nextAdapter
-    }
 
+    }
 }
+

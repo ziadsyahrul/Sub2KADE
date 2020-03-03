@@ -1,9 +1,11 @@
 package com.ziadsyahrul.sub2kade.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.ziadsyahrul.sub2kade.MVP.detail.detailMatch.DetailMatchActivity
 import com.ziadsyahrul.sub2kade.R
 import com.ziadsyahrul.sub2kade.model.EventsItem
 import kotlinx.android.extensions.LayoutContainer
@@ -39,6 +41,14 @@ class PreviousAdapter(val items: List<EventsItem?>?) :
             tv_str_home_score.text = items?.intHomeScore
             tv_str_away_score.text = items?.intAwayScore
             tv_date.text = items?.dateEvent
+
+            itemView.setOnClickListener {
+                val intent = Intent(itemView.context, DetailMatchActivity::class.java)
+                intent.putExtra("id", items?.idEvent)
+                intent.putExtra("idHome", items?.homeTeamId)
+                it.context.startActivity(intent)
+            }
+
         }
     }
 }

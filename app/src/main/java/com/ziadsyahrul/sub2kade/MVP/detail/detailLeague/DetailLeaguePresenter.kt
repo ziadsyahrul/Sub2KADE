@@ -1,4 +1,4 @@
-package com.ziadsyahrul.sub2kade.MVP.detail
+package com.ziadsyahrul.sub2kade.MVP.detail.detailLeague
 
 import com.androidnetworking.AndroidNetworking
 import com.androidnetworking.common.Priority
@@ -25,3 +25,4 @@ class DetailLeaguePresenter(val view: DetailLeagueView) {
             })
     }
 }
+

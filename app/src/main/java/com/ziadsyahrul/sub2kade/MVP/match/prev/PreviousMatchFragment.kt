@@ -1,7 +1,6 @@
 package com.ziadsyahrul.sub2kade.MVP.match.prev
 
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.orhanobut.hawk.Hawk
-import com.ziadsyahrul.sub2kade.MVP.detail.DetailLeagueActivity
+import com.ziadsyahrul.sub2kade.MVP.detail.detailLeague.DetailLeagueActivity
 
 import com.ziadsyahrul.sub2kade.R
 import com.ziadsyahrul.sub2kade.adapter.PreviousAdapter
@@ -45,5 +44,4 @@ class PreviousMatchFragment : Fragment(), PreviousView {
         previousAdapter = PreviousAdapter(data)
         rv_prev_match.adapter = previousAdapter
     }
-
 }
